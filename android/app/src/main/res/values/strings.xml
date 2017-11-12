@@ -1,0 +1,5 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey"></string>
+    <string name="RNB_GOOGLE_PLAY_LICENSE_KEY">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs7RliP/XRWN1+pU2C4Nwm88U2QkX1AKGVr5psp+3lipVkln+VFG6suXqslfRIngB3Ade4/C3rXobCz3UWTOZwYDFjK5c6I61dStZU7QR/bfq/GC2rQYV9Hnln0L+pnNYpBKgSQ//tNjNLfnSLWmWS1r03tdmUYahm41jnzMaPFj3UCwoDKzxJvN2KIWl/5L4m9AmTYNvuWy2hRoZj7gaDZ6yKJXIrRzMtZ8CCfXW5e3OhOjJ9d9E0Y1xBejsxOdGrG1PD123Q3z+zBIp9wYA/UytT9Erm7KxYKT2HLnC5c2xFJZD4QwX6XtvG6tAu3XUsC0CgwWPr4IjFJgg0f8t4wIDAQAB</string>
+    <string name="app_name">RapQuiz</string>
+</resources>
