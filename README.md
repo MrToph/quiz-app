@@ -14,17 +14,18 @@ The react-native mobile app for the quiz
 * [x] Make Answer Buttons stack vertically in Quiz + Result Screen, because of long artist names. Use scroll container in QuizScreen
 * [x] Remove Show Lyrics and make the whole Card clickable instead?
 * [x] Different font for lines
-* [ ] Link to Android Store for this app when sharing on Result screen. goo.gl. Use hash tags?
-* [ ] Lock to Portrait mode
-* [ ] Check if code push works
-* [ ] Trim lines?
+* [x] Link to Android Store for this app when sharing on Result screen. goo.gl. Use hash tags?
+* [x] Lock to Portrait mode
 * [x] Add Admob interstitial
-* [ ] Add IAP option to remove ads
+* [x] Add IAP option to remove ads
 * [x] Add About Section in Settings
+* [ ] Hardware Back key press should pop navigation stack
+* [ ] Trim lines?
+* [ ] Check if code push works
 
 #### Bugs
 * [x] Replaying game => Timer doesn't start on first question
-* [ ] Check default language settings again. Were English, but should be German?
+* [x] Check default language settings again. Were English, but should be German?
 
 #### Publishing
 * [ ] Create logo. Link logo

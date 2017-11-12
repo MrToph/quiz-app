@@ -45,12 +45,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.rapquiz",
+    package = "io.cmichel.rapquiz",
 )
 
 android_resource(
     name = "res",
-    package = "com.rapquiz",
+    package = "io.cmichel.rapquiz",
     res = "src/main/res",
 )
 

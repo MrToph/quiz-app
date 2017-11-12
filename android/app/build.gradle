@@ -99,13 +99,23 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.rapquiz"
+        applicationId "io.cmichel.rapquiz"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    signingConfigs {
+        release {
+            if (project.hasProperty('RAPQUIZ_RELEASE_STORE_FILE')) {
+                storeFile file(RAPQUIZ_RELEASE_STORE_FILE)
+                storePassword RAPQUIZ_RELEASE_STORE_PASSWORD
+                keyAlias RAPQUIZ_RELEASE_KEY_ALIAS
+                keyPassword RAPQUIZ_RELEASE_KEY_PASSWORD
+            }
         }
     }
     splits {
@@ -117,9 +127,17 @@ android {
         }
     }
     buildTypes {
+        releaseStaging {
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            buildConfigField "String", "CODEPUSH_KEY", '"aDn6hTbTLfPUtdBEWkJI25CGROgm7a4acc4a-be4a-4c0f-a78e-e5db50be145a"'
+            signingConfig signingConfigs.release
+        }
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            buildConfigField "String", "CODEPUSH_KEY", '"Ar8XoQs2jKr3KGs8tR5kCE9-UW-g7a4acc4a-be4a-4c0f-a78e-e5db50be145a"'
+            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release

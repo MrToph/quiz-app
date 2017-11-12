@@ -1,4 +1,4 @@
-package com.rapquiz;
+package io.cmichel.rapquiz;
 
 import com.facebook.react.ReactActivity;
 
