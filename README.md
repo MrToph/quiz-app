@@ -19,7 +19,7 @@ The react-native mobile app for the quiz
 * [x] Add Admob interstitial
 * [x] Add IAP option to remove ads
 * [x] Add About Section in Settings
-* [ ] Hardware Back key press should pop navigation stack
+* [x] Hardware Back key press should pop navigation stack
 * [ ] Trim lines?
 * [ ] Check if code push works
 
@@ -28,6 +28,8 @@ The react-native mobile app for the quiz
 * [x] Check default language settings again. Were English, but should be German?
 
 #### Publishing
+* [ ] Do keyword research for a good name
 * [ ] Create logo. Link logo
 * [ ] Create feature image + other images
 * [ ] Write copy
+* [ ] Add IAP

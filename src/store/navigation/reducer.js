@@ -19,6 +19,7 @@ function navReducer(state = initialNavState, action) {
         params: action.params,
       }
     }
+    case NavActionTypes.navigateBack:
     case ReactNavigationActions.BACK: {
       // Clicking on back always resets to single Menu screen
       return AppNavigator.router.getStateForAction(

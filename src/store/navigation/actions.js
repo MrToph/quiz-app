@@ -5,6 +5,7 @@ import { selectIsGameLoading, selectIsUpdating } from '../selectors'
 import { rejectAfterDuration } from '../../utils'
 
 const ActionTypes = {
+  navigateBack: 'NAVIGATE_BACK',
   navigateToResult: 'NAVIGATE_TO_RESULT',
   transitionEnd: 'TRANSITION_END',
   loadNewGame: 'LOAD_NEW_GAME',
@@ -20,6 +21,10 @@ const ActionTypes = {
 }
 
 export default ActionTypes
+
+export const navigateBack = () => ({
+  type: ActionTypes.navigateBack,
+})
 
 export const navigateToResult = () => ({
   type: ActionTypes.navigateToResult,
@@ -105,7 +110,7 @@ export const checkUpdatesPressed = () => (dispatch, getState) => {
     (...args) => dispatch(onSyncStatusChange(...args)),
     (...args) => dispatch(onDownloadProgress(...args)),
     (...args) => dispatch(onError(...args)),
-  ).then(console.log)
+  )
 }
 
 export const settingsPressed = () => ({

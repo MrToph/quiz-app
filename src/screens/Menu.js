@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ToastAndroid } from 'react-native'
 import PropTypes from 'prop-types'
 import { Spinner } from 'native-base'
 import { connect } from 'react-redux'
@@ -8,7 +9,7 @@ import {
   selectIsUpdating,
   selectUpdateProgress,
 } from '../store/selectors'
-import { Button, View } from '../components'
+import { Button } from '../components'
 import BackgroundView from '../components/BackgroundView'
 import ProgressBar from '../components/ProgressBar'
 import {
@@ -61,6 +62,7 @@ export default class Menu extends Component {
 
   onUpdatePressed = () => {
     this.props.checkUpdatesPressed()
+    .catch(err => ToastAndroid.show(err.message, ToastAndroid.LONG))
   };
 
   render() {
