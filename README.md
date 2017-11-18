@@ -28,8 +28,8 @@ The react-native mobile app for the quiz
 * [x] Check default language settings again. Were English, but should be German?
 
 #### Publishing
-* [ ] Do keyword research for a good name
-* [ ] Create logo. Link logo
+* [x] Create logo. Link logo
+* [x] Do keyword research for a good name
 * [ ] Create feature image + other images
 * [ ] Write copy
 * [ ] Add IAP
