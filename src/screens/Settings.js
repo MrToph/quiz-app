@@ -75,6 +75,7 @@ export default class Settings extends Component {
 
   static propTypes = {
     language: PropTypes.oneOf(['de', 'en']).isRequired,
+    freeVersion: PropTypes.bool.isRequired,
     languageSelected: PropTypes.func.isRequired,
     noAdsPurchased: PropTypes.func.isRequired,
   };
@@ -133,6 +134,8 @@ export default class Settings extends Component {
   };
 
   render() {
+    const { freeVersion } = this.props
+
     const [appSectionHeader, ...appSectionSubSections] = renderSection(
       'app',
       {
@@ -162,7 +165,7 @@ export default class Settings extends Component {
             </Picker>
           </View>
           {renderSection('ads', {
-            name: 'remove',
+            name: freeVersion ? 'remove' : 'purchased',
             onPress: this.onRemoveAds,
           })}
           {[

@@ -20,8 +20,8 @@ The react-native mobile app for the quiz
 * [x] Add IAP option to remove ads
 * [x] Add About Section in Settings
 * [x] Hardware Back key press should pop navigation stack
-* [ ] Check if code push works
-* [ ] Check if IAP works
+* [x] Check if code push works
+* [x] Check if IAP works
 
 #### Bugs
 * [x] Replaying game => Timer doesn't start on first question

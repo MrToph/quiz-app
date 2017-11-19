@@ -52,6 +52,10 @@ const settingsScreen = {
       heading: 'Werbung entfernen',
       text: 'Wenn dir die Werbung nicht gefällt oder du mich unterstützen möchest, kannst du eine werbefreie Version kaufen indem du hier klickst.',
     },
+    purchased: {
+      heading: 'Werbung entfernt',
+      text: 'Danke für die Unterstützung.',
+    },
   },
   app: {
     heading: 'Anwendung',

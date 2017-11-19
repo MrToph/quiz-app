@@ -52,6 +52,10 @@ const settingsScreen = {
       text:
         "If you don't like the ads and want to support me, you can purchase an ad-free version by clicking here.",
     },
+    purchased: {
+      heading: 'Ads removed',
+      text: 'Thanks for supporting me.',
+    },
   },
   app: {
     heading: 'Application',
