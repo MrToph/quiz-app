@@ -35,7 +35,7 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new InAppBillingBridgePackage(),
             new RNI18nPackage(),
-            new CodePush(null, MainApplication.this, BuildConfig.DEBUG),
+            new CodePush(BuildConfig.CODEPUSH_KEY, MainApplication.this, BuildConfig.DEBUG),
             new RNAdMobPackage()
       );
     }
