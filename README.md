@@ -1,35 +1,11 @@
-# quiz-app
-The react-native mobile app for the quiz
+# react-native-quiz-app
+The react-native mobile app for the rap quiz.
 
-### Todo
-#### Features
-* [x] Throttle Play Game actions
-* [x] Spacing in Main Menu
-* [x] Make CodePush updates mandatory
-* [x] i18n
-* [x] Settings Screen: Language: Toggle i18n between german/english
-* [x] Rehydrate Settings
-* [x] Questions Screen: Improve UI. Better font, some more color? Bigger title, ProgressBar?
-* [x] Background with small drawings like Whatsapp
-* [x] Make Answer Buttons stack vertically in Quiz + Result Screen, because of long artist names. Use scroll container in QuizScreen
-* [x] Remove Show Lyrics and make the whole Card clickable instead?
-* [x] Different font for lines
-* [x] Link to Android Store for this app when sharing on Result screen. goo.gl. Use hash tags?
-* [x] Lock to Portrait mode
-* [x] Add Admob interstitial
-* [x] Add IAP option to remove ads
-* [x] Add About Section in Settings
-* [x] Hardware Back key press should pop navigation stack
-* [x] Check if code push works
-* [x] Check if IAP works
+![Rap Quiz Featured Image](http://cmichel.io/released-fifth-react-native-app/featured.jpg)
 
-#### Bugs
-* [x] Replaying game => Timer doesn't start on first question
-* [x] Check default language settings again. Were English, but should be German?
+This is the repository for my _Rap Quiz_ App on Android written in React Native using Redux.
 
-#### Publishing
-* [x] Create logo. Link logo
-* [x] Do keyword research for a good name
-* [x] Create feature image + other images
-* [x] Write copy
-* [x] Add IAP
+* You can read more about the development on [my blog](http://cmichel.io/released-fifth-react-native-app/).
+* You can read more about the app on the [Google Play Store](https://play.google.com/store/apps/details?id=io.cmichel.rapquiz)
+
+<a href="https://play.google.com/store/apps/details?id=io.cmichel.rapquiz&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img width="250px" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"></a>
